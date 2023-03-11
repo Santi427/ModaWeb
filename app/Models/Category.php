@@ -27,10 +27,6 @@ class Category extends Model
         return Category::find($id);
     }
 
-    public function favorites(){
-        return $this->hasMany('App\Favorite');
-    }
-
     public function products(){
         return $this->hasMany('App\Product');
     }
