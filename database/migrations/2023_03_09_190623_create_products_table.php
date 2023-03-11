@@ -18,7 +18,7 @@ return new class extends Migration
             $table->String('image');
             $table->String('brand');
             $table->String('price');
-            $table->String('stock');
+            $table->integer('stock');
             $table->boolean('slide');
         
 
