@@ -54,14 +54,14 @@ class User extends Authenticatable
     }
 
     public function role(){
-        return $this->belongsTo('App\Role');
+        return $this->belongsTo('App\Models\Role');
     }
 
     public function favorite(){
-        return $this->hasMany('App\Favorite');
+        return $this->hasMany('App\Models\Favorite');
     }
 
     public function product(){
-        return $this->hasMany('App\Product');
+        return $this->hasMany('App\Models\Product');
     }
 }
